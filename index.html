@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Playstation | Gaming Website Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
+    <title>Playstation | Gaming Website Landing Page</title>
   </head>
   <body>
     <header>
@@ -29,7 +33,31 @@
       </ul>
     </header>
 
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="img/diablo-4-bg.jpeg" alt="Diablo" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/god-of-war-bg.jpeg" alt="God of War" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/final-fantasy-bg.jpeg" alt="Final Fantasy" />
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
